@@ -1,6 +1,6 @@
 import java.io.File
 
-class LexemeTableGenerator(val lexemes: List<Lexeme>) {
+class TableGenerator(val lexemes: List<Lexeme>, val outputFile : String) {
 
     private val FORMAT = "%-7s |  %-17s | \n"
 
@@ -11,7 +11,7 @@ class LexemeTableGenerator(val lexemes: List<Lexeme>) {
 
     fun execute() {
         
-        File("lexeme-output.txt").printWriter().use { out ->
+        File(outputFile).printWriter().use { out ->
             
             out.println("\nDICTIONARY")
             out.printf(FORMAT, "index", "keyword")
@@ -32,6 +32,13 @@ class LexemeTableGenerator(val lexemes: List<Lexeme>) {
             out.println("\nRESULTS")
             out.printf("%-15s |  %-7s | \n", "lexeme", "kind")
             lexemes.forEach{ result -> out.println(formatOutput(result.value, result.kind)) }
+            
+            out.println("\nTetrads")
+
+            if (TetradHolder.tetradList.isNotEmpty())
+                TetradHolder.tetradList.forEach {
+                    out.println(it)
+                }
 
         }
     }

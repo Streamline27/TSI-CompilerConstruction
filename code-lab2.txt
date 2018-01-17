@@ -1,2 +1,2 @@
 if EditorDialog(edFind, @FindRec) <> cmCancel then FindStr := Find;
-FindStr := Find;
+

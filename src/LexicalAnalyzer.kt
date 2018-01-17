@@ -30,7 +30,7 @@ class LexicalAnalyzer(input: String) {
         return lexemeList
     }
 
-    private fun delimiterList() = arrayOf('+', '-', '.', '(', ')', '@', ':', ';')
+    private fun delimiterList() = arrayOf('+', '-', '.', '(', ')', '@', ':', ';', ',')
 
     private fun processKeyword() : Lexeme {
 
@@ -114,8 +114,9 @@ class LexicalAnalyzer(input: String) {
 
     private fun processUnrecognized() : Lexeme {
 
-        return Lexeme(input[position++].toString(), Lexeme.Type.ERROR)
+//        return Lexeme(input[position++].toString(), Lexeme.Type.ERROR)
+        throw IllegalLexemeException(input[position++].toString())
     }
 
-
+    open class IllegalLexemeException(lexeme : String) : Throwable("Can not process symbol '$lexeme'")
 }
