@@ -6,7 +6,7 @@ fun main(args : Array<String>){
     
     
     try {
-        val code = File("/Users/Vladislav/Development/Citadele/LexicalAnalyzer/code-lab1.txt").readText();
+        val code = File("code-lab1.txt").readText();
         
         val lexemeResultList = LexicalAnalyzer(code).analyze()
         println("Lab1 code has successfully passed lexical analysis")
@@ -19,7 +19,7 @@ fun main(args : Array<String>){
 
     
     try {
-        val statementCode = File("/Users/Vladislav/Development/Citadele/LexicalAnalyzer/code-lab2.txt").readText()
+        val statementCode = File("code-lab2.txt").readText()
         
         val lexemeResultList = LexicalAnalyzer(statementCode).analyze()
         println("Lab2 code has successfully passed lexical analysis")

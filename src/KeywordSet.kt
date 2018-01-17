@@ -23,5 +23,6 @@ class KeywordSet : HashSet<String>(){
         this.add("+")
         this.add("@")
         this.add("<>")
+        this.add(",")
     }
 }

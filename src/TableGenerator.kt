@@ -33,12 +33,16 @@ class TableGenerator(val lexemes: List<Lexeme>, val outputFile : String) {
             out.printf("%-15s |  %-7s | \n", "lexeme", "kind")
             lexemes.forEach{ result -> out.println(formatOutput(result.value, result.kind)) }
             
-            out.println("\nTetrads")
+            
 
-            if (TetradHolder.tetradList.isNotEmpty())
+            if (TetradHolder.tetradList.isNotEmpty()) {
+
+                out.println("\nTetrads")
+
                 TetradHolder.tetradList.forEach {
                     out.println(it)
                 }
+            }
 
         }
     }
