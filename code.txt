@@ -1,0 +1,13 @@
+procedure TEditor.Find;
+var FindRec: TFindDialogRec; I: Integer;
+Begin
+    R.A.Y := (I div 4)+ 7;
+    with FindRec do
+    Begin
+        Find := FindStr;
+        Options := EditorFlags;
+        if EditorDialog(edFind, @FindRec) <> cmCancel then FindStr := Find;
+        EditorFlags := Options and not efDoReplace;
+        DoSearchReplace;
+    End;
+End;
