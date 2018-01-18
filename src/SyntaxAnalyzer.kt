@@ -10,10 +10,10 @@ class SyntaxAnalyzer(val lexemes : List<Lexeme>) {
     fun nextIsIfStatement(sentence: List<Lexeme>) : List<Lexeme>{
 
         var remainingSentence = nextIsExpected("if",   sentence)
-            remainingSentence = nextIsLogicalCondition(remainingSentence)
-            remainingSentence = nextIsExpected("then", remainingSentence)
-        
+        remainingSentence = nextIsLogicalCondition(remainingSentence)
         TetradHolder.createOperation("IF", TetradHolder.savedVariable)
+        remainingSentence = nextIsExpected("then", remainingSentence)
+        
         
         remainingSentence = nextIsOperator(remainingSentence)
         

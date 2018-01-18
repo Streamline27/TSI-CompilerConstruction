@@ -11,7 +11,7 @@ fun main(args : Array<String>){
         val lexemeResultList = LexicalAnalyzer(code).analyze()
         println("Lab1 code has successfully passed lexical analysis")
         
-        TableGenerator(lexemeResultList, outputFile = "lexeme-output.txt").execute()
+        TableGenerator(lexemeResultList, outputFile = "lab1-output.txt").execute()
     }
     catch (e : LexicalAnalyzer.IllegalLexemeException) {
         println(e.message)
@@ -27,7 +27,7 @@ fun main(args : Array<String>){
         SyntaxAnalyzer(lexemeResultList).analyze()
         println("Lab2 code has successfully passed syntax analysis")
         
-        TableGenerator(lexemeResultList, outputFile = "statement-output.txt").execute()
+        TableGenerator(lexemeResultList, outputFile = "lab1and2-output.txt").execute()
         
     }
     catch (e : LexicalAnalyzer.IllegalLexemeException) {

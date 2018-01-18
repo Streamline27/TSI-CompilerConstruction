@@ -1,0 +1,64 @@
+
+DICTIONARY
+index   |  keyword           | 
+0       |  @                 | 
+1       |  <>                | 
+2       |  :=                | 
+3       |  var               | 
+4       |  (                 | 
+5       |  )                 | 
+6       |  *                 | 
+7       |  procedure         | 
+8       |  do                | 
+9       |  then              | 
+10      |  +                 | 
+11      |  ,                 | 
+12      |  .                 | 
+13      |  div               | 
+14      |  with              | 
+15      |  not               | 
+16      |  and               | 
+17      |  Begin             | 
+18      |  End               | 
+19      |  :                 | 
+20      |  ;                 | 
+21      |  if                | 
+
+LITERALS
+index   |  literal           | 
+
+IDENTIFIERS
+index   |  identifiers       | 
+0       |  EditorDialog      | 
+1       |  edFind            | 
+2       |  FindRec           | 
+3       |  cmCancel          | 
+4       |  FindStr           | 
+5       |  Find              | 
+
+RESULTS
+lexeme          |  kind    | 
+if              |  KEYWORD |  keyword id: 21     
+EditorDialog    |  ID      |
+(               |  KEYWORD |  keyword id: 4      
+edFind          |  ID      |
+,               |  KEYWORD |  keyword id: 11     
+@               |  KEYWORD |  keyword id: 0      
+FindRec         |  ID      |
+)               |  KEYWORD |  keyword id: 5      
+<>              |  KEYWORD |  keyword id: 1      
+cmCancel        |  ID      |
+then            |  KEYWORD |  keyword id: 9      
+FindStr         |  ID      |
+:=              |  KEYWORD |  keyword id: 2      
+Find            |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+
+Tetrads
+[STASH, edFind, , T1]
+[ADDROF, FindRec, , T2]
+[STASH, T2, , T1]
+[CALL, EditorDialog, T1, T3]
+[NOTEQ, T3, cmCancel, T4]
+[IF, T4, , ]
+[ASSIGN, FindStr, , FindStr]

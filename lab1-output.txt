@@ -1,0 +1,122 @@
+
+DICTIONARY
+index   |  keyword           | 
+0       |  @                 | 
+1       |  <>                | 
+2       |  :=                | 
+3       |  var               | 
+4       |  (                 | 
+5       |  )                 | 
+6       |  *                 | 
+7       |  procedure         | 
+8       |  do                | 
+9       |  then              | 
+10      |  +                 | 
+11      |  ,                 | 
+12      |  .                 | 
+13      |  div               | 
+14      |  with              | 
+15      |  not               | 
+16      |  and               | 
+17      |  Begin             | 
+18      |  End               | 
+19      |  :                 | 
+20      |  ;                 | 
+21      |  if                | 
+
+LITERALS
+index   |  literal           | 
+0       |  4                 | 
+1       |  7                 | 
+
+IDENTIFIERS
+index   |  identifiers       | 
+0       |  TEditor           | 
+1       |  Find              | 
+2       |  FindRec           | 
+3       |  TFindDialogRec    | 
+4       |  I                 | 
+5       |  Integer           | 
+6       |  R                 | 
+7       |  A                 | 
+8       |  Y                 | 
+9       |  FindStr           | 
+10      |  Options           | 
+11      |  EditorFlags       | 
+12      |  EditorDialog      | 
+13      |  edFind            | 
+14      |  cmCancel          | 
+15      |  efDoReplace       | 
+16      |  DoSearchReplace   | 
+
+RESULTS
+lexeme          |  kind    | 
+procedure       |  KEYWORD |  keyword id: 7      
+TEditor         |  ID      |
+.               |  KEYWORD |  keyword id: 12     
+Find            |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+var             |  KEYWORD |  keyword id: 3      
+FindRec         |  ID      |
+:               |  KEYWORD |  keyword id: 19     
+TFindDialogRec  |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+I               |  ID      |
+:               |  KEYWORD |  keyword id: 19     
+Integer         |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+Begin           |  KEYWORD |  keyword id: 17     
+R               |  ID      |
+.               |  KEYWORD |  keyword id: 12     
+A               |  ID      |
+.               |  KEYWORD |  keyword id: 12     
+Y               |  ID      |
+:=              |  KEYWORD |  keyword id: 2      
+(               |  KEYWORD |  keyword id: 4      
+I               |  ID      |
+div             |  KEYWORD |  keyword id: 13     
+4               |  NUMBER  |
+)               |  KEYWORD |  keyword id: 5      
++               |  KEYWORD |  keyword id: 10     
+7               |  NUMBER  |
+;               |  KEYWORD |  keyword id: 20     
+with            |  KEYWORD |  keyword id: 14     
+FindRec         |  ID      |
+do              |  KEYWORD |  keyword id: 8      
+Begin           |  KEYWORD |  keyword id: 17     
+Find            |  ID      |
+:=              |  KEYWORD |  keyword id: 2      
+FindStr         |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+Options         |  ID      |
+:=              |  KEYWORD |  keyword id: 2      
+EditorFlags     |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+if              |  KEYWORD |  keyword id: 21     
+EditorDialog    |  ID      |
+(               |  KEYWORD |  keyword id: 4      
+edFind          |  ID      |
+,               |  KEYWORD |  keyword id: 11     
+@               |  KEYWORD |  keyword id: 0      
+FindRec         |  ID      |
+)               |  KEYWORD |  keyword id: 5      
+<>              |  KEYWORD |  keyword id: 1      
+cmCancel        |  ID      |
+then            |  KEYWORD |  keyword id: 9      
+FindStr         |  ID      |
+:=              |  KEYWORD |  keyword id: 2      
+Find            |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+EditorFlags     |  ID      |
+:=              |  KEYWORD |  keyword id: 2      
+Options         |  ID      |
+and             |  KEYWORD |  keyword id: 16     
+not             |  KEYWORD |  keyword id: 15     
+efDoReplace     |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+DoSearchReplace |  ID      |
+;               |  KEYWORD |  keyword id: 20     
+End             |  KEYWORD |  keyword id: 18     
+;               |  KEYWORD |  keyword id: 20     
+End             |  KEYWORD |  keyword id: 18     
+;               |  KEYWORD |  keyword id: 20     
